@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Weather</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar  p-md-4 navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand d-flex " href="#">
+          <div class=" d-flex align-items-center justify-content-center me-1">
+            <img src="img/logo@2x.png" alt="logo">
+          </div>
+          <div class="text-white d-flex justify-content-center flex-column ms-2">
+            <h1 class=" mt-4 mb-1">Weather</h1>
+            <p class=" mt-0">tagline goes here</p>
+          </div>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+
+    </nav>
+  </header>
+  <!-- search -->
+  <section class="n pb-md-5 w-100 ">
+    <div class="home">
+    <div class=" d-flex w-100  justify-content-center  align-items-center h-25">
+      <div class="position-relative w-75 mb-5 mt-5">
+        <input id="l" type="text" class="text-white form-control new-input px-md-3 py-3 border-0 rounded-5" placeholder="Find your location...">
+        <button class="btn px-md-4 new-button rounded-5 text-white">Find</button>
+      </div>
+    </div>
+    <div class=" container pb-5 rounded-4 w-75">
+      <div class="row  ">
+        <!-- today -->
+        <div class="col-md-4 p-0 ">
+          <div class="header-today  d-flex justify-content-between align-items-center p-3">
+            <p class="text-header m-0" id="todayName"></p>
+            <p class="text-header m-0" id="month"></p>
+          </div>
+          <div class="body-today time px-4 ">
+            <p class="text-header city mb-0 pt-3" id="cityName">Cairo</p>
+            <p class="degree text-white d-inline mt-0 p-0" id="citydegree"></p>
+            <img id="weatherState" src="" class="mb-4 ms-3" alt="time">
+            <p class="custom m-0 mb-4" id="conditionToday">clear</p>
+            <div class="d-flex pb-3">
+              <div >
+                <i class="fa-solid fa-umbrella fa-lg" style="color:#bfc1c8;"></i>
+                <span class="custom">20%</span>
+              </div>
+              <div class="mx-4">
+                <i class="fa-solid fa-wind fa-lg" style="color:#bfc1c8;"></i>
+                <span class="custom" id="wind">18km/h</span>
+              </div>
+              <div >
+                <i class="fa-regular fa-compass fa-lg" style="color:#bfc1c8;"></i>
+                <span class="custom">East</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tomorrow -->
+        <div class="col-md-4 p-0">
+          <div class="header-tomorrow d-flex justify-content-between align-items-center  p-3">
+            <p class="text-header m-auto" id="tomorrowName"></p>
+          </div>
+          <div class="body-tomorrow time pt-5 text-center ">
+            <img src="" id="tommIcon" class="m-auto mb-3 icon-weather" alt="Weather">
+            <p class="text-body m-0" id="maxTempTomm">42.4C</p>
+            <p class="small-degree" id="minTempTomm">29.9</p>
+            <p class="custom" id="tommState">sunny</p>
+          </div>
+        </div>
+        <!-- next day -->
+        <div class="col-md-4 p-0">
+          <div class="header-nextday d-flex justify-content-between align-items-center  p-3">
+            <p class="text-header m-auto" id="nextDayName"></p>
+          </div>
+          <div class="body-nextday time pt-5 text-center">
+            <img src="" id="nextdayIcon" class="m-auto mb-3 icon-weather" alt="Weather">
+            <p class="text-body m-0 " id="maxTempNextday">42.4C</p>
+            <p class="small-degree" id="minTempNextday">29.9</p>
+            <p class="custom"  id="nextdayState">sunny</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container w-75 pb-4">
+      <div class="row w-100 mt-3 justify-content-center justify-content-between  align-items-center">
+      <div class="col-md-8  position-relative  ">
+        <input type="text" class="text-white form-control new-input px-md-3 py-3 border-0 rounded-5" placeholder="Enter your email to subscribe...">
+        <button class="btn px-md-4 new-button rounded-5 text-white" style="right: 20px;">Subscribe</button>
+      </div>
+      <div class="col-md-4 contact-holder mt-3  d-flex justify-content-center  ">
+        <div class="icon-holder-contact  m-1 ms-0  rounded-circle position-relative">
+          <i class="fa-brands fa-facebook-f fa-lg icon-contact "></i>
+        </div>
+        <div class="icon-holder-contact  m-1 rounded-circle position-relative">
+          <i class="fa-brands fa-twitter fa-lg icon-contact "></i>
+        </div>
+        <div class="icon-holder-contact  m-1 rounded-circle position-relative">
+          <i class="fa-brands fa-google-plus-g fa-lg icon-contact "></i>
+        </div>
+        <div class="icon-holder-contact  m-1 rounded-circle position-relative">
+          <i class="fa-brands fa-pinterest fa-lg icon-contact "></i>
+        </div>
+    </div>
+
+  </div>
+  <p class="mt-4 " >Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

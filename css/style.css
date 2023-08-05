@@ -1,0 +1,202 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Nav-bar */
+.navbar {
+    background-color: #1e202b !important;
+}
+
+.navbar-brand img {
+    width: 64px;
+    height: 38px;
+}
+
+h1 {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h1+p {
+    color: #bfc1c8;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+}
+
+.nav-link {
+
+    font-size: 14px;
+    padding: 5px 30px !important;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.active {
+    border: 2px solid #009ad8;
+    border-radius: 30px;
+    color: #009ad8 !important;
+
+}
+
+/* home */
+.home {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    min-height: 350px;
+
+}
+
+.new-input {
+    background-color: #1e202b;
+
+}
+
+.new-button {
+    background-color: #009ad8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.new-button:hover{
+    background-color: #009ad8;
+}
+
+.form-control:focus {
+    background-color: #1e202b;
+    border: 0;
+    box-shadow: 0 0 0;
+}
+
+::placeholder {
+    color: #5c7575 !important;
+}
+
+.header-today {
+    background-color: #282b37;
+ border-top-left-radius:20px ;
+}
+.text-header {
+    color: #BFC1C8;
+    font-size: 14px;
+    /* line-height:21px */
+}
+.header-nextday{
+    background-color: #282b37;
+    border-top-right-radius:20px ;
+}
+.time{
+    height: 90%;
+}
+.city {
+    font-size: 18px;
+    /* line-height: 27px; */
+}
+
+.body-today {
+    background-color: #2d303d;
+    border-bottom-left-radius:20px ;
+}
+.body-nextday {
+    background-color: #2d303d;
+    border-bottom-right-radius:20px ;
+}
+.degree {
+    font-size: 90px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.degree+img {
+    width: 90px;
+}
+
+.custom {
+    color: #009ad8;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+span {
+    color: #bfc1c8 !important;
+    /* margin-bottom: 20px */
+}
+
+.header-tomorrow {
+    background-color: #222530;
+}
+
+.body-tomorrow {
+    background-color: #262936;
+    /* height: 312px; */
+}
+
+.body-tomorrow img {
+    width: 50px;
+}
+
+.text-body {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.small-degree {
+    color: #bfc1c8;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.n {
+    background-color: #1e202b;
+}
+.icon-holder-contact{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e202b;
+    transition: all 0.5s;
+}
+.icon-contact{
+    color: #009ad8;
+  position: absolute;
+    transition: all 0.5s;
+}
+.icon-holder-contact:hover{
+    background-color: #009ad8;
+}
+.icon-holder-contact:hover .icon-contact{
+   color: #fff;
+}
+footer p {
+    color: #bfc1c8;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+}
+.icon-weather{
+    width: 50px;
+    height: 50px;
+}
+@media only screen and (max-width : 1024px) {
+    .degree {
+        font-size: 50px;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    i {
+        margin: 20px 0;
+     }
+}
