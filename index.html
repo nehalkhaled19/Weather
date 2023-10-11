@@ -1,13 +1,12 @@
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
   <title>Weather</title>
 </head>
 
@@ -50,15 +49,19 @@
 
     </nav>
   </header>
-  <!-- search -->
+
+<!-- body -->
   <section class="n pb-md-5 w-100 ">
     <div class="home">
+        <!-- search -->
     <div class=" d-flex w-100  justify-content-center  align-items-center h-25">
+      
       <div class="position-relative w-75 mb-5 mt-5">
-        <input id="l" type="text" class="text-white form-control new-input px-md-3 py-3 border-0 rounded-5" placeholder="Find your location...">
+        <input id="searchByName" type="text" class="text-white form-control new-input px-md-3 py-3 border-0 rounded-5" placeholder="Find your location...">
         <button class="btn px-md-4 new-button rounded-5 text-white">Find</button>
       </div>
     </div>
+    <!-- display -->
     <div class=" container pb-5 rounded-4 w-75">
       <div class="row  ">
         <!-- today -->
@@ -75,7 +78,7 @@
             <div class="d-flex pb-3">
               <div >
                 <i class="fa-solid fa-umbrella fa-lg" style="color:#bfc1c8;"></i>
-                <span class="custom">20%</span>
+                <span id="humidity" class="custom">20%</span>
               </div>
               <div class="mx-4">
                 <i class="fa-solid fa-wind fa-lg" style="color:#bfc1c8;"></i>
@@ -83,40 +86,41 @@
               </div>
               <div >
                 <i class="fa-regular fa-compass fa-lg" style="color:#bfc1c8;"></i>
-                <span class="custom">East</span>
+                <span id="wind_direction" class="custom">East</span>
               </div>
             </div>
           </div>
         </div>
+   
         <!-- tomorrow -->
         <div class="col-md-4 p-0">
           <div class="header-tomorrow d-flex justify-content-between align-items-center  p-3">
-            <p class="text-header m-auto" id="tomorrowName"></p>
+            <p class="text-header m-auto next-day"></p>
           </div>
           <div class="body-tomorrow time pt-5 text-center ">
-            <img src="" id="tommIcon" class="m-auto mb-3 icon-weather" alt="Weather">
-            <p class="text-body m-0" id="maxTempTomm">42.4C</p>
-            <p class="small-degree" id="minTempTomm">29.9</p>
-            <p class="custom" id="tommState">sunny</p>
+            <img src=""  class="m-auto mb-3 icon-weather icon" alt="icon-Weather">
+            <p class="text-body m-0 max-temp" >42.4C</p>
+            <p class="small-degree min-temp" >29.9</p>
+            <p class="custom state" >sunny</p>
           </div>
         </div>
-        <!-- next day -->
+        <!-- After Tomorrow -->
         <div class="col-md-4 p-0">
-          <div class="header-nextday d-flex justify-content-between align-items-center  p-3">
-            <p class="text-header m-auto" id="nextDayName"></p>
+          <div class="header-tomorrow d-flex justify-content-between align-items-center  p-3">
+            <p class="text-header m-auto next-day"></p>
           </div>
-          <div class="body-nextday time pt-5 text-center">
-            <img src="" id="nextdayIcon" class="m-auto mb-3 icon-weather" alt="Weather">
-            <p class="text-body m-0 " id="maxTempNextday">42.4C</p>
-            <p class="small-degree" id="minTempNextday">29.9</p>
-            <p class="custom"  id="nextdayState">sunny</p>
+          <div class="body-tomorrow time pt-5 text-center ">
+            <img src=""  class="m-auto mb-3 icon-weather icon" alt="icon-Weather">
+            <p class="text-body m-0 max-temp" >42.4C</p>
+            <p class="small-degree min-temp" >29.9</p>
+            <p class="custom state" >sunny</p>
           </div>
         </div>
       </div>
     </div>
   </div>
     </section>
-  </section>
+  
   <!-- footer -->
   <footer>
     <div class="container w-75 pb-4">

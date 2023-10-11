@@ -61,7 +61,8 @@ h1+p {
     right: 5px;
     top: 5px;
 }
-.new-button:hover{
+
+.new-button:hover {
     background-color: #009ad8;
 }
 
@@ -77,20 +78,24 @@ h1+p {
 
 .header-today {
     background-color: #282b37;
- border-top-left-radius:20px ;
+    border-top-left-radius: 20px;
 }
+
 .text-header {
     color: #BFC1C8;
     font-size: 14px;
     /* line-height:21px */
 }
-.header-nextday{
+
+.header-nextday {
     background-color: #282b37;
-    border-top-right-radius:20px ;
+    border-top-right-radius: 20px;
 }
-.time{
+
+.time {
     height: 90%;
 }
+
 .city {
     font-size: 18px;
     /* line-height: 27px; */
@@ -98,12 +103,14 @@ h1+p {
 
 .body-today {
     background-color: #2d303d;
-    border-bottom-left-radius:20px ;
+    border-bottom-left-radius: 20px;
 }
+
 .body-nextday {
     background-color: #2d303d;
-    border-bottom-right-radius:20px ;
+    border-bottom-right-radius: 20px;
 }
+
 .degree {
     font-size: 90px;
     margin-bottom: 30px;
@@ -153,14 +160,18 @@ span {
     line-height: 24px;
     font-weight: 300;
 }
+
+/* //footer */
 footer {
     background: #262936;
     padding: 50px 0;
 }
+
 .n {
     background-color: #1e202b;
 }
-.icon-holder-contact{
+
+.icon-holder-contact {
     width: 40px;
     height: 40px;
     display: flex;
@@ -169,34 +180,50 @@ footer {
     background-color: #1e202b;
     transition: all 0.5s;
 }
-.icon-contact{
+
+.icon-contact {
     color: #009ad8;
-  position: absolute;
+    position: absolute;
     transition: all 0.5s;
 }
-.icon-holder-contact:hover{
+
+.icon-holder-contact:hover {
     background-color: #009ad8;
 }
-.icon-holder-contact:hover .icon-contact{
-   color: #fff;
+
+.icon-holder-contact:hover .icon-contact {
+    color: #fff;
 }
+
 footer p {
     color: #bfc1c8;
     font-size: 14px;
     line-height: 21px;
     font-weight: 300;
 }
-.icon-weather{
+
+.icon-weather {
     width: 50px;
     height: 50px;
 }
+
 @media only screen and (max-width : 1024px) {
     .degree {
         font-size: 50px;
         margin-bottom: 30px;
         font-weight: 400;
     }
+
     i {
         margin: 20px 0;
-     }
+    }
+    #weatherState {
+        width: 30%;
+    }
 }
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) { 
+    #weatherState {
+        width: 15%;
+    }
+ }
